@@ -1,26 +1,25 @@
 package curator
 
 import (
-	"github.com/samuel/go-zookeeper/zk"
+	"github.com/go-zookeeper/zk"
 )
 
 // Transactional/atomic operations.
 //
 // The general form for this interface is:
 //
-// 		curator.InTransaction().operation().arguments().ForPath(...).
-//              And().more-operations.
-//              And().Commit()
+//			curator.InTransaction().operation().arguments().ForPath(...).
+//	             And().more-operations.
+//	             And().Commit()
 //
 // Here's an example that creates two nodes in a transaction
 //
-//		curator.InTransaction().
-//              Create().ForPathWithData("/path-one", path-one-data).
-//              And().Create().ForPathWithData("/path-two", path-two-data).
-//              And().Commit()
+//			curator.InTransaction().
+//	             Create().ForPathWithData("/path-one", path-one-data).
+//	             And().Create().ForPathWithData("/path-two", path-two-data).
+//	             And().Commit()
 //
 // <b>Important:</b> the operations are not submitted until CuratorTransactionFinal.Commit() is called.
-//
 type Transaction interface {
 	// Start a create builder in the transaction
 	Create() TransactionCreateBuilder

@@ -7,7 +7,7 @@ import (
 	"unsafe"
 
 	"github.com/flier/curator.go"
-	"github.com/samuel/go-zookeeper/zk"
+	"github.com/go-zookeeper/zk"
 )
 
 type CacheEventType int

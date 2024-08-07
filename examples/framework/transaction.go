@@ -14,7 +14,7 @@ func CreateTransaction(client curator.CuratorFramework) error {
 		Commit() // IMPORTANT! The transaction is not submitted until commit() is called
 
 	for _, result := range results {
-		fmt.Printf("%s - %s", result.ForPath, result.Type)
+		fmt.Printf("%s - %v", result.ForPath, result.Type)
 	}
 
 	return err

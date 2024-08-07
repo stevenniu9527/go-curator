@@ -3,7 +3,7 @@ package curator
 import (
 	"testing"
 
-	"github.com/samuel/go-zookeeper/zk"
+	"github.com/go-zookeeper/zk"
 	"github.com/stretchr/testify/assert"
 )
 
