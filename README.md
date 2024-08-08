@@ -1,6 +1,6 @@
 # What is Curator?
 
-Curator n ˈkyoor͝ˌātər: a keeper or custodian of a museum or other collection - A ZooKeeper Keeper.
+Curator is a keeper or custodian of a museum or other collection - A ZooKeeper Keeper.
 
 ![curator](http://curator.apache.org/images/ph-quote.png "Patrick Hunt Quote")
 
