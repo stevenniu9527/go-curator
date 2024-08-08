@@ -4,6 +4,8 @@
 *.so
 *.out
 
+.idea
+
 # Folders
 _obj
 _test
